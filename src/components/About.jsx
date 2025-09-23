@@ -64,21 +64,20 @@ const About = () => {
         <div className="about-content">
           <h2>About Me</h2>
           <p>
-            I'm Ahmad Showi S Fuadi, a full-stack developer passionate about
-            building modern, high-performance applications with an
-            intuitive user experience. I enjoy working with the latest
-            technologies like Artificial Intelligence, Machine Learning, and
-            cloud-based development, blending creativity with precision to
-            deliver exceptional solutions.
+            I'm Ahmad Showi S Fuadi, an Informatics Engineering fresh graduate
+             aspiring to be a full-stack developer. I have a solid foundation in web application 
+             development and a strong interest in emerging technologies such as 
+             Artificial Intelligence, Machine Learning, and cloud computing. 
+             With eagerness to learn and high adaptability, I am ready to grow with a company and contribute to building innovative and valuable digital solutions.
           </p>
           
           <div className="stats">
             <div className="stat-item">
-              <h3>20+</h3>
+              <h3>5+</h3>
               <p>Project Finished</p>
             </div>
             <div className="stat-item">
-              <h3>3+</h3>
+              <h3>1+</h3>
               <p>Years of Experience</p>
             </div>
           </div>

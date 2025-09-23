@@ -47,7 +47,7 @@ const Sertifikasi = () => {
       title: "Sertifikasi Kompetensi Programmer",
       subtitle: "Junior Web Developer",
       issuer: "Badan Nasional Sertifikasi Profesi (BNSP)",
-      date: "2023",
+      date: "2025",
       image: "/pemrograman.jpg",
       category: "Professional",
       level: "National",
@@ -290,27 +290,7 @@ const Sertifikasi = () => {
           ))}
         </div>
 
-        <div className="certifications-cta">
-          <div className="cta-content">
-            <h3>🎯 Continuous Learning Journey</h3>
-            <p>Always pursuing new certifications and expanding professional expertise</p>
-            <div className="cta-buttons">
-              <button className="primary-cta">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-                </svg>
-                View All Achievements
-              </button>
-              <button className="secondary-cta">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                  <polyline points="22,6 12,13 2,6"/>
-                </svg>
-                Contact for Verification
-              </button>
-            </div>
-          </div>
-        </div>
+        
 
         {/* Background Effects */}
         <div className="bg-decorations">

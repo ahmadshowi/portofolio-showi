@@ -14,7 +14,7 @@ const Navbar = () => {
     };
 
     const handleSectionHighlight = () => {
-      const sections = ['hero', 'about', 'skills', 'projects', 'experience', 'sertifikasi', 'testimonial', 'contact'];
+      const sections = ['hero', 'about', 'skills', 'projects', 'Journey', 'sertifikasi', 'testimonial', 'contact'];
       const scrollPosition = window.scrollY + 100;
 
       for (let section of sections) {

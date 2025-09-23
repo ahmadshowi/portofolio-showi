@@ -7,10 +7,10 @@ const Hero = () => {
   const [textIndex, setTextIndex] = useState(0);
 
   const titles = [
-    "Web Developer",
-    "React Specialist", 
+    "Junior Web Developer",
     "UI/UX Designer",
-    "Frontend Wizard"
+    "Learner / Explorer", 
+    "Tech Enthusiast"
   ];
 
   useEffect(() => {
@@ -42,7 +42,7 @@ AHMAD SHOWI S FUADI
 Creative Web Developer
 
 📧 Email: ahmadshowi@email.com
-📱 Phone: +62 xxx-xxxx-xxxx
+📱 Phone: +6282299417885
 🌐 Portfolio: www.ahmadshowi.dev
 
 💼 EXPERIENCE
@@ -152,19 +152,19 @@ Creative Web Developer
 
         {/* Dynamic Title */}
         <div className="hero-title">
-          <span className="title-prefix">Creative</span>
+          <span className="title-prefix"></span>
           <span className="title-dynamic" key={textIndex}>
             {titles[textIndex]}
           </span>
         </div>
 
         {/* Description */}
-        <p className="hero-description">
-Menciptakan <span className="highlight">solusi digital inovatif</span> 
-dengan teknologi web modern. Spesialis di React dan membangun 
-<span className="highlight">antarmuka yang berdampak</span> untuk hasil terbaik.
+<p className="hero-description">
+Bersemangat untuk <span className="highlight">belajar dan berkembang</span> 
+dalam pengembangan web modern. Memiliki dasar di React dan fokus membangun 
+<span className="highlight">antarmuka yang sederhana dan bernilai</span>.
+</p>
 
-        </p>
 
         {/* CTA Buttons */}
         <div className="hero-cta">

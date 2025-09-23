@@ -11,69 +11,44 @@ const Testimonial = () => {
   const testimonials = [
     {
       id: 1,
-      name: "Sarah Johnson",
-      position: "CEO at TechStart",
-      company: "TechStart Solutions",
+      name: "Sudrajat",
+      position: "Admin Transbulevard",
+      company: "Transbulevard",
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face",
       rating: 5,
       testimonial: "Kerja Showi sangat memuaskan! Website yang dia buat untuk perusahaan kami benar-benar mengubah cara kami berinteraksi dengan klien. Performance dan design-nya luar biasa!",
       project: "Corporate Website",
-      date: "December 2023",
+      date: "Mei 2025",
       color: "#667eea",
-      tags: ["React.js", "Node.js", "MongoDB"]
+      tags: ["PHP", "MySQL", "HTML","CSS"]
     },
     {
       id: 2,
-      name: "Michael Chen",
-      position: "Founder & CTO",
-      company: "InnovateTech",
+      name: "Teddy",
+      position: "Founder HSMOTOR",
+      company: "HSMOTOR",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
       rating: 5,
-      testimonial: "Ahmad Showi adalah developer yang sangat profesional dan detail. Dia berhasil membangun sistem e-commerce kami dari nol dengan fitur-fitur canggih yang sangat membantu bisnis kami berkembang pesat.",
-      project: "E-Commerce Platform",
-      date: "November 2023",
+      testimonial: "Ahmad Showi adalah bisa merealisasikan apa yang saya mau dan apa yang saya butuhkan",
+      project: "Service Management",
+      date: "November 2024",
       color: "#f093fb",
-      tags: ["Laravel", "MySQL", "Payment Gateway"]
+      tags: ["PHP", "MySQL", "Boostrap"]
     },
     {
       id: 3,
-      name: "Lisa Rodriguez",
-      position: "Marketing Director",
-      company: "Digital Agency Pro",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+      name: "Farid Komarudin",
+      position: "Kepala Desa Sukamaju",
+      company: "Desa Sukamaju",
+      image: "https://images.",
       rating: 5,
-      testimonial: "Pengalaman bekerja dengan Showi sangat mengesankan! Dia tidak hanya mampu mengembangkan aplikasi web yang powerful, tapi juga memahami kebutuhan bisnis dengan baik. Highly recommended!",
-      project: "Management Dashboard",
+      testimonial: "Ahmad showi dapat membantu saya untuk menyalurkan Bansos menjadi tepat sasaran, menggunakan metode SMART dalam bentuk digitalisasi website modern",
+      project: "Decision Support System",
       date: "October 2023",
       color: "#4facfe",
-      tags: ["Vue.js", "Express.js", "PostgreSQL"]
+      tags: ["PHP", "JS", "MySQL"]
     },
-    {
-      id: 4,
-      name: "David Thompson",
-      position: "Product Manager",
-      company: "StartupHub",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
-      rating: 5,
-      testimonial: "Showi delivered exceptional work on our mobile-responsive web application. His attention to detail and ability to solve complex problems made our project a huge success. The app performs flawlessly!",
-      project: "Mobile Web App",
-      date: "September 2023",
-      color: "#a8edea",
-      tags: ["React Native", "Firebase", "PWA"]
-    },
-    {
-      id: 5,
-      name: "Amanda Wilson",
-      position: "Operations Manager",
-      company: "HealthTech Solutions",
-      image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
-      rating: 5,
-      testimonial: "Ahmad sangat memahami requirement kami dan mampu mengimplementasikan sistem yang kompleks dengan hasil yang melebihi ekspektasi. Communication skill dan technical expertise-nya sangat baik!",
-      project: "Healthcare Management System",
-      date: "August 2023",
-      color: "#667eea",
-      tags: ["Django", "Python", "REST API"]
-    }
+
   ];
 
   useEffect(() => {
@@ -148,7 +123,7 @@ const Testimonial = () => {
 
         <div className="testimonial-stats">
           <div className="stat-item">
-            <div className="stat-number">50+</div>
+            <div className="stat-number">5+</div>
             <div className="stat-label">Happy Clients</div>
           </div>
           <div className="stat-item">
@@ -296,41 +271,6 @@ const Testimonial = () => {
               {activeIndex + 1} / {testimonials.length}
             </span>
           </div>
-        </div>
-
-        <div className="testimonial-cta">
-          <div className="cta-content">
-            <h3>🚀 Ready to Start Your Project?</h3>
-            <p>Join these satisfied clients and let's create something amazing together!</p>
-            <div className="cta-buttons">
-              <button className="primary-cta">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                  <polyline points="22,6 12,13 2,6"/>
-                </svg>
-                Get In Touch
-              </button>
-              <button className="secondary-cta">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/>
-                  <polyline points="10,17 15,12 10,7"/>
-                  <line x1="15" y1="12" x2="3" y2="12"/>
-                </svg>
-                View Portfolio
-              </button>
-            </div>
-          </div>
-        </div>
-
-        {/* Background Effects */}
-        <div className="testimonial-bg-effects">
-          <div className="floating-quote floating-quote-1">"</div>
-          <div className="floating-quote floating-quote-2">"</div>
-          <div className="floating-star floating-star-1">⭐</div>
-          <div className="floating-star floating-star-2">✨</div>
-          <div className="floating-star floating-star-3">💫</div>
-          <div className="floating-heart floating-heart-1">💖</div>
-          <div className="floating-heart floating-heart-2">💝</div>
         </div>
       </div>
     </section>

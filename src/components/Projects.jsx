@@ -30,7 +30,7 @@ const Projects = () => {
       description: "Modern transportation and boulevard management system with real-time tracking and user-friendly interface.",
       image: "/transbulevard.png",
       link: "https://transbulevard.com",
-      tags: ["React", "Node.js", "MongoDB", "Real-time"],
+      tags: ["PHP", "MySQL", "Bootstrap", "CRM"],
       category: "Web Application",
       status: "Live",
       gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
@@ -52,7 +52,7 @@ const Projects = () => {
       description: "Decision Support System for social assistance distribution using smart algorithms to ensure fair and efficient aid allocation.",
       image: "/spk.png",
       link: "https://spkbansos-sukamaju.my.id",
-      tags: ["Laravel", "MySQL", "Algorithm", "Dashboard"],
+      tags: ["PHP", "MySQL", "Bootstrap", "CRM"],
       category: "Government System",
       status: "Live",
       gradient: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)"

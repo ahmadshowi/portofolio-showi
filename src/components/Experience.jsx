@@ -26,76 +26,64 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      title: "Full-Stack Developer",
-      company: "Tech Solutions Indonesia",
-      location: "Jakarta, Indonesia",
-      period: "2022 - Present",
-      type: "Full Time",
-      description: "Leading development of modern web applications using React.js, Node.js, and cloud technologies. Successfully delivered 15+ projects with 99.9% uptime.",
+      title: "S1 Teknik Informatika",
+      company: "Universitas Pamulang",
+      location: "Tangerang Selatan, Indonesia",
+      period: "2021 - 2025",
+      type: "Sarjana",
+      status: "Final Year Student",
+      description: "Menyelesaikan pendidikan Strata 1 di bidang Teknik Informatika dengan fokus pada pengembangan perangkat lunak modern, web development, dan teknologi terkini. Aktif mengerjakan berbagai proyek praktis yang relevan dengan industri.",
       achievements: [
-        "Increased application performance by 40%",
-        "Led team of 5 junior developers",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Built scalable microservices architecture"
+        "IPK 3.6 dengan prestasi akademik konsisten",
+        "Menguasai 5+ bahasa pemrograman modern",
+        "Mengerjakan 5+ proyek web development",
+        "Aktif dalam organisasi IT dan coding bootcamp",
+        "Sertifikasi Nasional dalam Web Development"
       ],
-      skills: ["React.js", "Node.js", "AWS", "Docker", "MongoDB"],
+      skills: ["JavaScript", "React.js", "Node.js", "PHP", "MySQL", "HTML5", "CSS3"],
       color: "#667eea",
-      icon: "💻"
+      icon: "🎓",
+      gpa: "3.75"
     },
     {
       id: 2,
-      title: "Frontend Developer",
-      company: "Digital Creative Agency",
-      location: "Bandung, Indonesia",
-      period: "2021 - 2022",
-      type: "Contract",
-      description: "Specialized in creating responsive and interactive user interfaces for various clients including e-commerce platforms and corporate websites.",
+      title: "Freelance Web Developer",
+      company: "Self-Employed",
+      location: "Remote, Indonesia",
+      period: "2023 - Present",
+      type: "Freelance",
+      status: "Active",
+      description: "Menyediakan layanan pengembangan website untuk UMKM dan startup lokal. Mengkhususkan diri dalam pembuatan website responsif, e-commerce, dan sistem informasi sederhana yang user-friendly.",
       achievements: [
-        "Developed 20+ responsive websites",
-        "Improved user engagement by 35%",
-        "Optimized loading speed by 50%",
-        "Collaborated with UX/UI designers"
+        "Menyelesaikan 5+ proyek website sukses",
+        "Klien rating 4.9/5 dengan testimoni positif",
+        "Optimasi SEO meningkatkan traffic 200%+",
+        "Maintenance & support berkelanjutan"
       ],
-      skills: ["React.js", "JavaScript", "CSS3", "Bootstrap", "Figma"],
+      skills: ["PHP", "React.js", "java", "SEO", "Responsive Design","MySQL"],
       color: "#f093fb",
-      icon: "🎨"
+      icon: "💻",
+      clients: "5+"
     },
     {
       id: 3,
-      title: "Web Development Intern",
-      company: "StartupTech Incubator",
-      location: "Bandung, Indonesia",
-      period: "2020 - 2021",
-      type: "Internship",
-      description: "Gained hands-on experience in full-stack development while working on real-world projects. Participated in agile development processes and code reviews.",
+      title: "SMA Jurusan IPA",
+      company: "SMAN 1 Cianjur",
+      location: "Cianjur, Jawa Barat",
+      period: "2017 - 2020",
+      type: "Sekolah Menengah Atas",
+      status: "Graduate",
+      description: "Menyelesaikan pendidikan menengah atas dengan jurusan IPA. Membangun fondasi kuat dalam matematika, fisika, dan logika yang menjadi dasar untuk programming. Aktif dalam kegiatan ekstrakurikuler teknologi.",
       achievements: [
-        "Contributed to 8 different projects",
-        "Learned modern development practices",
-        "Participated in daily standups and sprints",
-        "Built first production-ready application"
+        "Lulus dengan nilai  (kategori baik)",
+        "Ketua kelas selama 2 tahun berturut-turut",
+        "Anggota aktif organisasi di sekolah",
       ],
-      skills: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL"],
+      skills: ["Matematika", "Logika", "Problem Solving", "Microsoft Office", "Photoshop"],
       color: "#4facfe",
-      icon: "🚀"
+      icon: "📚",
+      rank: "Top 10%"
     },
-    {
-      id: 4,
-      title: "Freelance Developer",
-      company: "Self-Employed",
-      location: "Remote",
-      period: "2019 - Present",
-      type: "Freelance",
-      description: "Providing web development services to small and medium businesses. Specialized in creating custom solutions that drive business growth.",
-      achievements: [
-        "Completed 25+ freelance projects",
-        "Maintained 5-star rating on platforms",
-        "Generated $50K+ in revenue",
-        "Built long-term client relationships"
-      ],
-      skills: ["WordPress", "Laravel", "React.js", "E-commerce"],
-      color: "#a8edea",
-      icon: "💼"
-    }
   ];
 
   const handleTimelineClick = (index) => {
@@ -104,22 +92,40 @@ const Experience = () => {
 
   return (
     <section className="experience" id="experience">
+      <div className="background-animation">
+        <div className="floating-code">
+          <span>&lt;/&gt;</span>
+          <span>{`{}`}</span>
+          <span>( )</span>
+          <span>[ ]</span>
+          <span>&lt;html&gt;</span>
+          <span>console.log()</span>
+        </div>
+      </div>
+
       <div className="experience-container">
         <div className="experience-header">
-          <h2>Professional Journey</h2>
-          <p>My career path and professional growth through the years</p>
+          <div className="header-badge">
+            <span className="badge-icon">⚡</span>
+            <span>Ready to Code & Create</span>
+          </div>
+          <h2>My Journey</h2>
+          <p>From student to developer - Building skills, creating solutions, ready for challenges</p>
           <div className="header-stats">
             <div className="stat-box">
-              <div className="stat-number">3+</div>
-              <div className="stat-label">Years Experience</div>
+              <div className="stat-icon">🎯</div>
+              <div className="stat-number">1+</div>
+              <div className="stat-label">Years Learning</div>
             </div>
             <div className="stat-box">
-              <div className="stat-number">50+</div>
-              <div className="stat-label">Projects Completed</div>
+              <div className="stat-icon">💼</div>
+              <div className="stat-number">5+</div>
+              <div className="stat-label">Projects Done</div>
             </div>
             <div className="stat-box">
-              <div className="stat-number">15+</div>
-              <div className="stat-label">Happy Clients</div>
+              <div className="stat-icon">🚀</div>
+              <div className="stat-number">100%</div>
+              <div className="stat-label">Motivation</div>
             </div>
           </div>
         </div>
@@ -143,9 +149,13 @@ const Experience = () => {
                 <div className="timeline-dot" style={{ backgroundColor: exp.color }}>
                   <span className="timeline-icon">{exp.icon}</span>
                   <div className="dot-ripple" style={{ borderColor: exp.color }}></div>
+                  <div className="dot-pulse" style={{ backgroundColor: exp.color }}></div>
                 </div>
                 <div className="timeline-date">
                   <span>{exp.period}</span>
+                  <div className="timeline-status" style={{ backgroundColor: exp.color }}>
+                    {exp.status}
+                  </div>
                 </div>
               </div>
             ))}
@@ -159,16 +169,39 @@ const Experience = () => {
                 className={`experience-card ${index === activeExp ? 'active' : ''}`}
                 style={{ '--exp-color': exp.color }}
               >
+                <div className="card-glow"></div>
                 <div className="card-header">
                   <div className="job-info">
-                    <h3>{exp.title}</h3>
+                    <div className="job-title-wrapper">
+                      <h3>{exp.title}</h3>
+                      {exp.gpa && (
+                        <div className="achievement-badge">
+                          <span>GPA {exp.gpa}</span>
+                        </div>
+                      )}
+                      {exp.clients && (
+                        <div className="achievement-badge">
+                          <span>{exp.clients} Clients</span>
+                        </div>
+                      )}
+                      {exp.rank && (
+                        <div className="achievement-badge">
+                          <span>{exp.rank}</span>
+                        </div>
+                      )}
+                      {exp.projects && (
+                        <div className="achievement-badge">
+                          <span>{exp.projects} Projects</span>
+                        </div>
+                      )}
+                    </div>
                     <div className="company-info">
                       <span className="company">{exp.company}</span>
                       <span className="location">📍 {exp.location}</span>
                     </div>
                   </div>
                   <div className="job-type">
-                    <span className={`type-badge ${exp.type.toLowerCase().replace(' ', '-')}`}>
+                    <span className={`type-badge ${exp.type.toLowerCase().replace(/ /g, '-')}`}>
                       {exp.type}
                     </span>
                   </div>
@@ -178,25 +211,28 @@ const Experience = () => {
                   <p className="job-description">{exp.description}</p>
 
                   <div className="achievements">
-                    <h4>🏆 Key Achievements</h4>
-                    <ul>
+                    <h4>🏆 Key Highlights</h4>
+                    <div className="achievements-grid">
                       {exp.achievements.map((achievement, achIndex) => (
-                        <li key={achIndex}>
+                        <div key={achIndex} className="achievement-item">
                           <div className="achievement-bullet"></div>
-                          {achievement}
-                        </li>
+                          <span>{achievement}</span>
+                        </div>
                       ))}
-                    </ul>
+                    </div>
                   </div>
 
                   <div className="skills-used">
-                    <h4>🛠️ Technologies Used</h4>
+                    <h4>🛠️ Skills & Technologies</h4>
                     <div className="skills-tags">
                       {exp.skills.map((skill, skillIndex) => (
                         <span 
                           key={skillIndex} 
                           className="skill-tag"
-                          style={{ animationDelay: `${skillIndex * 0.1}s` }}
+                          style={{ 
+                            animationDelay: `${skillIndex * 0.1}s`,
+                            '--skill-color': exp.color
+                          }}
                         >
                           {skill}
                         </span>
@@ -209,14 +245,16 @@ const Experience = () => {
                   <div className="experience-duration">
                     <span>📅 {exp.period}</span>
                   </div>
-                  <div className="card-glow"></div>
+                  <div className="card-actions">
+                    <button className="action-btn">View Details</button>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Navigation Buttons */}
+        {/* Navigation */}
         <div className="experience-nav">
           <button 
             className="nav-btn prev" 
@@ -228,16 +266,17 @@ const Experience = () => {
             </svg>
             Previous
           </button>
-          <div className="nav-dots">
-            {experiences.map((_, index) => (
-              <button
-                key={index}
-                className={`nav-dot ${index === activeExp ? 'active' : ''}`}
-                onClick={() => setActiveExp(index)}
-                style={{ backgroundColor: index === activeExp ? experiences[index].color : '' }}
-              ></button>
-            ))}
+          
+          <div className="nav-progress">
+            <div className="progress-bar">
+              <div 
+                className="progress-fill"
+                style={{ width: `${((activeExp + 1) / experiences.length) * 100}%` }}
+              ></div>
+            </div>
+            <span className="progress-text">{activeExp + 1} / {experiences.length}</span>
           </div>
+          
           <button 
             className="nav-btn next" 
             onClick={() => setActiveExp(Math.min(experiences.length - 1, activeExp + 1))}
@@ -250,11 +289,30 @@ const Experience = () => {
           </button>
         </div>
 
+        {/* Call to Action */}
+        <div className="cta-section">
+          <div className="cta-content">
+            <h3>Ready to contribute to your team!</h3>
+            <p>Passionate learner, dedicated worker, and problem solver</p>
+            <div className="cta-buttons">
+              <button className="cta-btn primary">
+                <span>💼</span>
+                Hire Me
+              </button>
+              <button className="cta-btn secondary">
+                <span>📄</span>
+                Download CV
+              </button>
+            </div>
+          </div>
+        </div>
+
         {/* Floating Elements */}
         <div className="floating-elements">
           <div className="floating-shape shape-1"></div>
           <div className="floating-shape shape-2"></div>
           <div className="floating-shape shape-3"></div>
+          <div className="floating-shape shape-4"></div>
         </div>
       </div>
     </section>
