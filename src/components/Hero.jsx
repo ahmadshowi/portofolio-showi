@@ -35,44 +35,15 @@ const Hero = () => {
     };
   }, [titles.length]);
 
-  const downloadCV = () => {
-    // Create dummy CV file
-    const cvContent = `
-AHMAD SHOWI S FUADI
-Creative Web Developer
+ const downloadCV = () => {
+  const element = document.createElement('a');
+  element.href = process.env.PUBLIC_URL + "/CV_ahmadShowiSF.pdf";
+  element.download = "CV_Ahmad_Showi_S_Fuadi.pdf"; // nama file saat di-download
+  document.body.appendChild(element);
+  element.click();
+  document.body.removeChild(element);
+};
 
-📧 Email: ahmadshowi@email.com
-📱 Phone: +6282299417885
-🌐 Portfolio: www.ahmadshowi.dev
-
-💼 EXPERIENCE
-• Frontend Developer - 3+ years
-• React Specialist
-• UI/UX Designer
-
-🛠️ SKILLS
-• React.js, Next.js
-• JavaScript, TypeScript  
-• HTML5, CSS3, SASS
-• Node.js, Express.js
-• MongoDB, PostgreSQL
-• Git, Docker
-
-🎯 PROJECTS
-• E-commerce Platform
-• Portfolio Websites
-• SaaS Applications
-• Mobile-first Designs
-    `;
-
-    const element = document.createElement('a');
-    const file = new Blob([cvContent], { type: 'text/plain' });
-    element.href = URL.createObjectURL(file);
-    element.download = 'Ahmad_Showi_S_Fuadi_CV.txt';
-    document.body.appendChild(element);
-    element.click();
-    document.body.removeChild(element);
-  };
 
   const scrollToContact = () => {
     // Smooth scroll to contact section
@@ -121,17 +92,20 @@ Creative Web Developer
       {/* Main Content */}
       <div className={`hero-content ${isVisible ? 'visible' : ''}`}>
         
-        {/* Profile Section */}
-        <div className="profile-section">
-          <div className="profile-image-container">
-            <div className="profile-spinning-border"></div>
-            <div className="profile-image">
-              {/* Replace this div with your actual image */}
-              <img src={process.env.PUBLIC_URL + "/showi.jpg"} alt="Ahmad Showi S Fuadi" className="profile-photo" />
-              {/* If image doesn't load, show initials */}
-              <div className="profile-fallback">AS</div>
-            </div>
-            
+        <div className="profile-image">
+  <img 
+    src={process.env.PUBLIC_URL + "/showi.jpg"} 
+    alt="Ahmad Showi S Fuadi" 
+    className="profile-photo"
+    onError={(e) => {
+      e.target.style.display = "none"; 
+      const fallback = e.target.nextSibling;
+      if (fallback) fallback.style.display = "flex";
+    }}
+  />
+  <div className="profile-fallback">AS</div>
+</div>
+
             {/* Floating Tech Icons */}
             <div className="floating-icon icon-1">⚛️</div>
             <div className="floating-icon icon-2">🎨</div>
