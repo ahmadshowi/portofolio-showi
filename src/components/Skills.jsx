@@ -23,14 +23,14 @@ const Skills = () => {
 
   const skillsData = [
     {
-      name: 'HTML5',
+      name: 'HTML',
       icon: '🏗️',
       color: '#E34F26',
       level: 80,
       category: 'Frontend'
     },
     {
-      name: 'CSS3',
+      name: 'CSS',
       icon: '🎨',
       color: '#1572B6',
       level: 80,

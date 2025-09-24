@@ -127,7 +127,7 @@ Creative Web Developer
             <div className="profile-spinning-border"></div>
             <div className="profile-image">
               {/* Replace this div with your actual image */}
-              <img src="showi.jpg" alt="Ahmad Showi S Fuadi" />
+              <img src={process.env.PUBLIC_URL + "/showi.jpg"} alt="Ahmad Showi S Fuadi" className="profile-photo" />
               {/* If image doesn't load, show initials */}
               <div className="profile-fallback">AS</div>
             </div>

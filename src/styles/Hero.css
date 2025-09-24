@@ -187,10 +187,15 @@
 }
 
 .profile-fallback {
-  font-size: 4rem;
-  font-weight: 900;
-  color: white;
-  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  display: none; /* fallback jangan tampil kalau foto ada */
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* isi penuh lingkaran */
+  border-radius: 50%;  /* pastikan bulat */
+  display: block;
 }
 
 /* Floating Tech Icons */

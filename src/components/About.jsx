@@ -95,7 +95,7 @@ const About = () => {
             </div>
             <div className="card-body">
               <div className="profile-image">
-                <img src="/showi.jpg" alt="Ahmad Showi S Fuadi" />
+                <img src={process.env.PUBLIC_URL + '/showi.jpg'} alt="Ahmad Showi S Fuadi" />
               </div>
               <div className="profile-info">
                 <h4>Ahmad Showi S Fuadi</h4>
