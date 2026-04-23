@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import '../styles/Projects.css';
 
 const Projects = () => {
-  const [hoveredProject, setHoveredProject] = useState(null);
+  const [, setHoveredProject] = useState(null);
   const [isVisible, setIsVisible] = useState(false);
   const containerRef = useRef(null);
 

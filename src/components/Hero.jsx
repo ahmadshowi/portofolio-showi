@@ -57,8 +57,8 @@ const Hero = () => {
       <div 
         className="hero-bg-gradient"
         style={{
-  ['--mouse-x']: `${mousePosition.x}%`,
-  ['--mouse-y']: `${mousePosition.y}%`
+  '--mouse-x': `${mousePosition.x}%`,
+'--mouse-y': `${mousePosition.y}%`
 }}
       ></div>
       
