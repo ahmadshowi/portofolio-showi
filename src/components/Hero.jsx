@@ -57,9 +57,9 @@ const Hero = () => {
       <div 
         className="hero-bg-gradient"
         style={{
-          '--mouse-x': `${mousePosition.x}%`,
-          '--mouse-y': `${mousePosition.y}%`
-        }}
+  ['--mouse-x']: `${mousePosition.x}%`,
+  ['--mouse-y']: `${mousePosition.y}%`
+}}
       ></div>
       
       <div className="hero-grid"></div>
@@ -71,11 +71,11 @@ const Hero = () => {
             key={i}
             className="particle"
             style={{
-              '--delay': `${i * 0.5}s`,
-              '--duration': `${3 + Math.random() * 4}s`,
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`
-            }}
+  ['--delay']: `${i * 0.5}s`,
+  ['--duration']: `${3 + Math.random() * 4}s`,
+  left: `${Math.random() * 100}%`,
+  top: `${Math.random() * 100}%`
+}}
           ></div>
         ))}
       </div>
