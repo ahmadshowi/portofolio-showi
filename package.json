@@ -2,7 +2,6 @@
   "name": "portofolio-showi",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ahmadshowi.github.io/portofolio-showi",
   "dependencies": {
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.4.0",
