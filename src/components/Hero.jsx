@@ -62,22 +62,24 @@ const Hero = () => {
 }}
       ></div>
       
-      <div className="hero-grid"></div>
+      <div className="hero-grid" />
       
       {/* Floating Particles */}
       <div className="floating-particles">
-        {[...Array(15)].map((_, i) => (
-          <div
-            key={i}
-            className="particle"
-            style={{
-  ['--delay']: `${i * 0.5}s`,
-  ['--duration']: `${3 + Math.random() * 4}s`,
-  left: `${Math.random() * 100}%`,
-  top: `${Math.random() * 100}%`
-}}
-          ></div>
-        ))}
+        {[...Array(15)].map((_, i) => {
+  return (
+    <div
+      key={i}
+      className="particle"
+      style={{
+        ['--delay']: `${i * 0.5}s`,
+        ['--duration']: `${3 + Math.random() * 4}s`,
+        left: `${Math.random() * 100}%`,
+        top: `${Math.random() * 100}%`
+      }}
+    ></div>
+  );
+})}
       </div>
 
       {/* Animated Shapes */}
