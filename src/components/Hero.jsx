@@ -35,18 +35,16 @@ const Hero = () => {
     };
   }, [titles.length]);
 
- const downloadCV = () => {
-  const element = document.createElement('a');
-  element.href = process.env.PUBLIC_URL + "/CV_ahmadShowiSF.pdf";
-  element.download = "CV_Ahmad_Showi_S_Fuadi.pdf"; // nama file saat di-download
-  document.body.appendChild(element);
-  element.click();
-  document.body.removeChild(element);
-};
-
+  const downloadCV = () => {
+    const element = document.createElement('a');
+    element.href = process.env.PUBLIC_URL + "/CV_ahmadShowiSF.pdf";
+    element.download = "CV_Ahmad_Showi_S_Fuadi.pdf";
+    document.body.appendChild(element);
+    element.click();
+    document.body.removeChild(element);
+  };
 
   const scrollToContact = () => {
-    // Smooth scroll to contact section
     const contactSection = document.querySelector('#contact');
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: 'smooth' });
@@ -92,26 +90,27 @@ const Hero = () => {
       {/* Main Content */}
       <div className={`hero-content ${isVisible ? 'visible' : ''}`}>
         
-        <div className="profile-image">
-  <img 
-    src={process.env.PUBLIC_URL + "/showi.jpg"} 
-    alt="Ahmad Showi S Fuadi" 
-    className="profile-photo"
-    onError={(e) => {
-      e.target.style.display = "none"; 
-      const fallback = e.target.nextSibling;
-      if (fallback) fallback.style.display = "flex";
-    }}
-  />
-  <div className="profile-fallback">AS</div>
-</div>
-
-            {/* Floating Tech Icons */}
-            <div className="floating-icon icon-1">⚛️</div>
-            <div className="floating-icon icon-2">🎨</div>
-            <div className="floating-icon icon-3">⚡</div>
-            <div className="floating-icon icon-4">💻</div>
+        {/* Profile Section */}
+        <div className="profile-section">
+          <div className="profile-image">
+            <img 
+              src={process.env.PUBLIC_URL + "/showi.jpg"} 
+              alt="Ahmad Showi S Fuadi" 
+              className="profile-photo"
+              onError={(e) => {
+                e.target.style.display = "none"; 
+                const fallback = e.target.nextSibling;
+                if (fallback) fallback.style.display = "flex";
+              }}
+            />
+            <div className="profile-fallback" style={{display: 'none'}}>AS</div>
           </div>
+
+          {/* Floating Tech Icons */}
+          <div className="floating-icon icon-1">⚛️</div>
+          <div className="floating-icon icon-2">🎨</div>
+          <div className="floating-icon icon-3">⚡</div>
+          <div className="floating-icon icon-4">💻</div>
 
           {/* Greeting Animation */}
           <div className="greeting">
@@ -133,12 +132,11 @@ const Hero = () => {
         </div>
 
         {/* Description */}
-<p className="hero-description">
-Bersemangat untuk <span className="highlight">belajar dan berkembang</span> 
-dalam pengembangan web modern. Memiliki dasar di React dan fokus membangun 
-<span className="highlight">antarmuka yang sederhana dan bernilai</span>.
-</p>
-
+        <p className="hero-description">
+          Bersemangat untuk <span className="highlight">belajar dan berkembang</span> 
+          dalam pengembangan web modern. Memiliki dasar di React dan fokus membangun 
+          <span className="highlight">antarmuka yang sederhana dan bernilai</span>.
+        </p>
 
         {/* CTA Buttons */}
         <div className="hero-cta">
@@ -166,13 +164,13 @@ dalam pengembangan web modern. Memiliki dasar di React dan fokus membangun
           <a href="https://github.com" className="social-link github" target="_blank" rel="noopener noreferrer">
             <span className="social-icon">📱</span>
           </a>
-          <a href="https://linkedin.com" className="social-link linkedin" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/ahmadshowi/" className="social-link linkedin" target="_blank" rel="noopener noreferrer">
             <span className="social-icon">💼</span>
           </a>
-          <a href="https://instagram.com" className="social-link instagram" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/ahmadshowisf/ram.com" className="social-link instagram" target="_blank" rel="noopener noreferrer">
             <span className="social-icon">📷</span>
           </a>
-          <a href="mailto:contact@ahmadshowi.com" className="social-link email">
+          <a href="mailto:ahmadhowi15@gmail.com" className="social-link email">
             <span className="social-icon">✉️</span>
           </a>
         </div>

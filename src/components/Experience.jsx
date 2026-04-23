@@ -43,7 +43,7 @@ const Experience = () => {
       skills: ["JavaScript", "React.js", "Node.js", "PHP", "MySQL", "HTML5", "CSS3"],
       color: "#667eea",
       icon: "🎓",
-      gpa: "3.75"
+      gpa: "3.60"
     },
     {
       id: 2,
@@ -289,23 +289,36 @@ const Experience = () => {
           </button>
         </div>
 
-        {/* Call to Action */}
-        <div className="cta-section">
-          <div className="cta-content">
-            <h3>Ready to contribute to your team!</h3>
-            <p>Passionate learner, dedicated worker, and problem solver</p>
-            <div className="cta-buttons">
-              <button className="cta-btn primary">
-                <span>💼</span>
-                Hire Me
-              </button>
-              <button className="cta-btn secondary">
-                <span>📄</span>
-                Download CV
-              </button>
-            </div>
-          </div>
-        </div>
+{/* Call to Action */}
+<div className="cta-section">
+  <div className="cta-content">
+    <h3>Ready to contribute to your team!</h3>
+    <p>Passionate learner, dedicated worker, and problem solver</p>
+    <div className="cta-buttons">
+      <button className="cta-btn primary">
+        <span>💼</span>
+        Hire Me
+      </button>
+      
+      {/* Button Download CV */}
+      <button 
+        className="cta-btn secondary"
+        onClick={() => {
+          const element = document.createElement("a");
+          element.href = process.env.PUBLIC_URL + "/CV_ahmadShowiSF.pdf";
+          element.download = "CV_Ahmad_Showi_S_Fuadi.pdf";
+          document.body.appendChild(element);
+          element.click();
+          document.body.removeChild(element);
+        }}
+      >
+        <span>📄</span>
+        Download CV
+      </button>
+    </div>
+  </div>
+</div>
+
 
         {/* Floating Elements */}
         <div className="floating-elements">
