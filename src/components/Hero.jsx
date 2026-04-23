@@ -37,7 +37,7 @@ const Hero = () => {
 
   const downloadCV = () => {
     const element = document.createElement('a');
-    element.href = process.env.PUBLIC_URL + "/CV_ahmadShowiSF.pdf";
+    element.href = "/CV_ahmadShowiSF.pdf";
     element.download = "CV_Ahmad_Showi_S_Fuadi.pdf";
     document.body.appendChild(element);
     element.click();
@@ -72,11 +72,11 @@ const Hero = () => {
       key={i}
       className="particle"
       style={{
-        ['--delay']: `${i * 0.5}s`,
-        ['--duration']: `${3 + Math.random() * 4}s`,
-        left: `${Math.random() * 100}%`,
-        top: `${Math.random() * 100}%`
-      }}
+  '--delay': `${i * 0.5}s`,
+  '--duration': `${3 + Math.random() * 4}s`,
+  left: `${Math.random() * 100}%`,
+  top: `${Math.random() * 100}%`
+}}
     ></div>
   );
 })}
@@ -96,7 +96,7 @@ const Hero = () => {
         <div className="profile-section">
           <div className="profile-image">
             <img 
-              src={process.env.PUBLIC_URL + "/showi.jpg"} 
+              src="/showi.jpg"
               alt="Ahmad Showi S Fuadi" 
               className="profile-photo"
               onError={(e) => {
